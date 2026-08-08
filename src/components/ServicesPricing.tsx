@@ -259,7 +259,7 @@ export default function ServicesPricing() {
           >
             <span className="block">Dịch Vụ &amp; Bảng Giá</span>
             <span className="mt-2 block font-display font-normal italic tracking-[-0.045em] text-[#4a433d]">
-              Cùng Triệu Salon tại Lái Thiêu
+              Chi tiết
             </span>
           </h2>
           <p
