@@ -69,14 +69,14 @@ export default function Stylists() {
           style={{ columnGap: '32px', rowGap: '56px' }}
         >
           {STYLISTS.map((stylist) => (
-            <article key={stylist.name} className="group cursor-pointer">
-              <div className="aspect-[4/5] overflow-hidden rounded-xl bg-[#f0ebe2]">
+            <article key={stylist.name} className="group">
+              <div className="aspect-square overflow-hidden rounded-xl bg-[#f0ebe2]">
                 <img
                   src={stylist.img}
                   alt={stylist.name}
                   loading="lazy"
                   decoding="async"
-                  className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                  className="h-full w-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.03]"
                 />
               </div>
               <p
