@@ -95,7 +95,7 @@ const SERVICE_CATEGORIES: ServiceCategory[] = [
     number: '03',
     title: 'NHUỘM & MÀU',
     image:
-      'https://res.cloudinary.com/ll6thxdy/image/upload/f_auto,q_auto,dpr_auto,w_700/v1786151472/0805_4_ta4j30.jpg',
+      'https://res.cloudinary.com/ll6thxdy/image/upload/f_auto,q_auto,dpr_auto,w_600/v1786151472/0805_4_ta4j30.jpg',
     alt: 'Nhuộm và tạo màu tóc tại Triệu Tóc Đẹp',
     women: [
       {
