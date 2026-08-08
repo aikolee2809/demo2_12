@@ -65,7 +65,7 @@ const Hero = forwardRef<HTMLElement, HeroProps>(({ visible }, ref) => {
         loop
         muted
         playsInline
-        preload="auto"
+        preload="metadata"
         aria-label="Không gian salon Triệu Salon"
         className="absolute inset-0 h-full w-full object-cover object-center"
       >

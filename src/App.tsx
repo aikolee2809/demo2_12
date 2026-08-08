@@ -4,10 +4,10 @@ import Nav from '@/components/Nav';
 import Hero from '@/components/Hero';
 import ImageGallery from '@/components/ImageGallery';
 import Stats from '@/components/Stats';
-import VideoShowcase from '@/components/VideoShowcase';
 import FloatingContact from '@/components/FloatingContact';
 import Footer from '@/components/Footer';
 
+const VideoShowcase = lazy(() => import('@/components/VideoShowcase'));
 const ServicesPricing = lazy(() => import('@/components/ServicesPricing'));
 const Stylists = lazy(() => import('@/components/Stylists'));
 const BookingCTA = lazy(() => import('@/components/BookingCTA'));
@@ -69,7 +69,9 @@ function App() {
         <Hero ref={heroRef} visible={heroContentVisible} />
         <ImageGallery />
         <Stats />
-        <VideoShowcase />
+        <Suspense fallback={<div className="min-h-[50vh] bg-[#F8F5F0]" />}>
+          <VideoShowcase />
+        </Suspense>
         <Suspense fallback={<div className="min-h-[50vh] bg-[#F8F5F0]" />}>
           <ServicesPricing />
           <Stylists />
