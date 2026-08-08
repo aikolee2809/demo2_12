@@ -61,7 +61,7 @@ export default function BookingCTA() {
               className="text-[11px] uppercase tracking-[0.3em] text-[#75656A]"
               style={{ fontFamily: "'JetBrains Mono', monospace" }}
             >
-              ĐẶT LỊCH HỆN
+              ĐẶT LỊCH HẸN
             </span>
             <h2
   className="mt-8 text-[clamp(1.75rem,3.5vw,3.5rem)] font-semibold leading-[0.98] tracking-[-0.055em] text-[#34282D]"
@@ -83,7 +83,7 @@ export default function BookingCTA() {
                 className="inline-block whitespace-nowrap bg-[#B98588] px-8 py-4 text-[11px] font-medium uppercase tracking-[0.12em] text-white transition-colors duration-300 hover:bg-[#A67376] active:scale-95 md:px-10 md:py-5 md:text-[12px] md:tracking-[0.15em]"
                 style={{ fontFamily: "'JetBrains Mono', monospace" }}
               >
-                ĐẶT LỊCH HỆN
+                ĐẶT LỊCH HẸN
               </a>
             </div>
           </div>
