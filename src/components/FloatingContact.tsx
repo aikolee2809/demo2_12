@@ -10,7 +10,7 @@ const ICONS = [
   {
     name: 'Google Maps',
     href: MAPS_LINK,
-    src: 'https://res.cloudinary.com/o5ikznlv/image/upload/q_auto/f_auto/v1786071157/images-Photoroom_u1pswl.png',
+    src: 'https://res.cloudinary.com/o5ikznlv/image/upload/q_auto/f_auto/w_200/v1786071157/images-Photoroom_u1pswl.png',
     label: 'Open Google Maps',
   },
   {
