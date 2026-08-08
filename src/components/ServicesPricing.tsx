@@ -1,3 +1,5 @@
+import { ArrowUp } from 'lucide-react';
+
 type Service = {
   name: string;
   price: string;
@@ -232,6 +234,13 @@ function CategoryMenu({ category }: { category: ServiceCategory }) {
           style={{ fontFamily: "'JetBrains Mono', monospace" }}
         >
           Về đầu trang
+        </a>
+        <a
+          href="#services-pricing"
+          aria-label="Quay lại dịch vụ"
+          className="flex h-10 w-10 items-center justify-center rounded-full border border-[#34282D]/15 text-[#34282D] transition-colors hover:border-[#B98588] hover:text-[#B98588] md:hidden"
+        >
+          <ArrowUp className="h-5 w-5" />
         </a>
       </div>
 
