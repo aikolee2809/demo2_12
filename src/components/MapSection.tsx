@@ -58,7 +58,7 @@ export default function MapSection() {
           >
             <span className="block">Hãy đến salon của chúng tôi</span>
             <span className="mt-2 block font-display font-normal italic tracking-[-0.045em] text-[#4a433d]">
-              Cùng Triệu Salon tại Lái Thiêu
+              Gần chợ Lái Thiêu
             </span>
           </h2>
         </div>
