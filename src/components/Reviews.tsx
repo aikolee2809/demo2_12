@@ -41,9 +41,15 @@ const REVIEWS = [
   },
 ];
 
-function ReviewCard({ review }: { review: (typeof REVIEWS)[number] }) {
+type Review = (typeof REVIEWS)[number];
+
+const COL_1 = [REVIEWS[0], REVIEWS[1], REVIEWS[2], REVIEWS[3], REVIEWS[4]];
+const COL_2 = [REVIEWS[3], REVIEWS[4], REVIEWS[5], REVIEWS[6], REVIEWS[7]];
+const COL_3 = [REVIEWS[5], REVIEWS[6], REVIEWS[7], REVIEWS[0], REVIEWS[1]];
+
+function ReviewCard({ review }: { review: Review }) {
   return (
-    <figure className="mx-3 flex h-full w-[320px] shrink-0 flex-col gap-5 rounded-xl border border-[#2a221c]/10 bg-white/60 p-8 md:w-[360px]">
+    <figure className="mb-6 flex w-full flex-col gap-5 rounded-xl border border-[#2a221c]/10 bg-white/60 p-8">
       <div className="flex gap-1">
         {Array.from({ length: 5 }).map((_, i) => (
           <span key={i} className="text-[14px] text-[#c9a96e]">
@@ -75,16 +81,43 @@ function ReviewCard({ review }: { review: (typeof REVIEWS)[number] }) {
   );
 }
 
-export default function Reviews() {
-  const loop = [...REVIEWS, ...REVIEWS];
+function ReviewColumn({
+  reviews,
+  duration,
+  delay,
+  className = '',
+}: {
+  reviews: Review[];
+  duration: number;
+  delay: number;
+  className?: string;
+}) {
+  const loop = [...reviews, ...reviews];
+  return (
+    <div className={`h-full overflow-hidden ${className}`}>
+      <div
+        className="flex flex-col will-change-transform"
+        style={{
+          animation: `marqueeScrollUp ${duration}s linear infinite`,
+          animationDelay: `-${delay}s`,
+        }}
+      >
+        {loop.map((review, i) => (
+          <ReviewCard key={`${review.name}-${i}`} review={review} />
+        ))}
+      </div>
+    </div>
+  );
+}
 
+export default function Reviews() {
   return (
     <section
       aria-label="Client reviews"
       className="overflow-hidden bg-[#FAF8F5] py-16 md:py-24"
     >
-      <div className="container mx-auto mb-12 px-6 sm:px-10 lg:px-16 md:mb-16">
-        <div className="flex flex-col gap-3">
+      <div className="container mx-auto px-6 sm:px-10 lg:px-16">
+        <div className="mb-12 flex flex-col gap-3 md:mb-16">
           <span
             className="text-[11px] uppercase tracking-[0.3em] text-[#7a6b5d]"
             style={{ fontFamily: "'JetBrains Mono', monospace" }}
@@ -98,17 +131,17 @@ export default function Reviews() {
             Cảm Nhận Khách Hàng
           </h2>
         </div>
-      </div>
 
-      <div className="group/marquee relative">
-        <div className="marquee-track flex w-max will-change-transform group-hover/marquee:[animation-play-state:paused]">
-          {loop.map((review, i) => (
-            <ReviewCard key={`${review.name}-${i}`} review={review} />
-          ))}
+        <div className="relative">
+          <div className="grid h-[70vh] grid-cols-1 gap-6 sm:grid-cols-2 md:h-[85vh] md:grid-cols-3 md:gap-8">
+            <ReviewColumn reviews={COL_1} duration={30} delay={0} />
+            <ReviewColumn reviews={COL_2} duration={36} delay={12} className="hidden sm:block" />
+            <ReviewColumn reviews={COL_3} duration={33} delay={6} className="hidden md:block" />
+          </div>
+
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-[#FAF8F5] to-transparent" />
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#FAF8F5] to-transparent" />
         </div>
-
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#FAF8F5] to-transparent" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#FAF8F5] to-transparent" />
       </div>
     </section>
   );

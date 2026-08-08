@@ -163,3 +163,8 @@ body {
 .floating-contact-btn:hover {
   animation-play-state: paused;
 }
+
+@keyframes marqueeScrollUp {
+  from { transform: translateY(0); }
+  to { transform: translateY(-50%); }
+}

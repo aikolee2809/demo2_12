@@ -85,7 +85,7 @@ export default function BookingCTA() {
                 href="https://zalo.me/0942777009"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-[#2a221c] px-8 py-3.5 text-[11px] uppercase tracking-[0.15em] text-white transition-colors duration-300 hover:bg-[#3d2f24] active:scale-95"
+                className="inline-block whitespace-nowrap bg-[#2a221c] px-8 py-4 text-[11px] font-medium uppercase tracking-[0.12em] text-white transition-colors duration-300 hover:bg-[#3d2f24] active:scale-95 md:px-10 md:py-5 md:text-[12px] md:tracking-[0.15em]"
                 style={{ fontFamily: "'JetBrains Mono', monospace" }}
               >
                 ĐẶT LỊCH HỆN
