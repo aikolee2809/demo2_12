@@ -26,7 +26,7 @@ const SERVICE_CATEGORIES: ServiceCategory[] = [
     number: '01',
     title: 'CẮT & TẠO KIỂU',
     image:
-      'https://res.cloudinary.com/ll6thxdy/image/upload/f_auto,q_auto,dpr_auto,w_700/v1786151472/0805_5_ypjs5y.jpg',
+      'https://res.cloudinary.com/ll6thxdy/image/upload/f_auto,q_auto,dpr_auto,w_600/v1786151472/0805_5_ypjs5y.jpg',
     alt: 'Cắt và tạo kiểu tóc tại Triệu Tóc Đẹp',
     women: [
       {
