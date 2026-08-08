@@ -125,7 +125,7 @@ const SERVICE_CATEGORIES: ServiceCategory[] = [
     number: '04',
     title: 'CHĂM SÓC & PHỤC HỒI',
     image:
-      'https://res.cloudinary.com/ll6thxdy/image/upload/f_auto,q_auto,dpr_auto,w_900/v1786151470/484978316_1808479776602735_1117950820531129718_n_1_mcrlev.jpg',
+      'https://res.cloudinary.com/ll6thxdy/image/upload/f_auto,q_auto,dpr_auto,w_600/v1786151470/484978316_1808479776602735_1117950820531129718_n_1_mcrlev.jpg',
     alt: 'Chăm sóc và phục hồi tóc tại Triệu Tóc Đẹp',
     women: [
       {
