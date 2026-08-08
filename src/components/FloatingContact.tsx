@@ -16,19 +16,19 @@ const ICONS = [
   {
     name: 'Zalo',
     href: ZALO_LINK,
-    src: 'https://res.cloudinary.com/o5ikznlv/image/upload/q_auto/f_auto/v1786071157/Icon_of_Zalo.svg_fvgtc7.webp',
+    src: 'https://res.cloudinary.com/o5ikznlv/image/upload/q_auto/f_auto/w_200/v1786071157/Icon_of_Zalo.svg_fvgtc7.webp',
     label: 'Chat on Zalo',
   },
   {
     name: 'Messenger',
     href: MESSENGER_LINK,
-    src: 'https://res.cloudinary.com/o5ikznlv/image/upload/q_auto/f_auto/v1786071157/5968771_tdpcd6.png',
+    src: 'https://res.cloudinary.com/o5ikznlv/image/upload/q_auto/f_auto/w_200/v1786071157/5968771_tdpcd6.png',
     label: 'Message on Messenger',
   },
   {
     name: 'TikTok',
     href: TIKTOK_LINK,
-    src: 'https://res.cloudinary.com/o5ikznlv/image/upload/q_auto/f_auto/v1786071156/tiktok-logo_a8px9f.png',
+    src: 'https://res.cloudinary.com/o5ikznlv/image/upload/q_auto/f_auto/w_200/v1786071156/tiktok-logo_a8px9f.png',
     label: 'Visit TikTok',
   },
 ];
