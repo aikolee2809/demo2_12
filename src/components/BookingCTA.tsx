@@ -69,9 +69,10 @@ export default function BookingCTA() {
   <span className="block">MÁI TÓC MỚI.</span>
   <span className="block">DIỆN MẠO MỚI.</span>
 
-  <span className="mt-3 block font-display text-[clamp(1.1rem,2vw,1.8rem)] font-normal italic leading-[1.2] tracking-[-0.035em] text-[#4a433d]">
-    Đã đến lúc dành thời gian cho bạn.
-  </span>
+ <span className="mt-3 block font-display text-[clamp(0.9rem,1.5vw,1.4rem)] font-normal italic leading-[1.2] tracking-[-0.035em] text-[#4a433d]">
+  <span className="block">Đã đến lúc</span>
+  <span className="block">dành thời gian cho bạn.</span>
+</span>
 </h2>
 
 <div className="mt-10">
