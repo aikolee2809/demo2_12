@@ -26,7 +26,7 @@ const SERVICE_CATEGORIES: ServiceCategory[] = [
     number: '01',
     title: 'CẮT & TẠO KIỂU',
     image:
-      'https://res.cloudinary.com/ll6thxdy/image/upload/f_auto,q_auto,dpr_auto,w_900/v1786151472/0805_5_ypjs5y.jpg',
+      'https://res.cloudinary.com/ll6thxdy/image/upload/f_auto,q_auto,dpr_auto,w_700/v1786151472/0805_5_ypjs5y.jpg',
     alt: 'Cắt và tạo kiểu tóc tại Triệu Tóc Đẹp',
     women: [
       {
@@ -64,7 +64,7 @@ const SERVICE_CATEGORIES: ServiceCategory[] = [
     number: '02',
     title: 'UỐN & DUỖI',
     image:
-      'https://res.cloudinary.com/ll6thxdy/image/upload/f_auto,q_auto,dpr_auto,w_900/v1786151471/94619370_242448817109689_6951844033924694016_n_t0fbnz.jpg',
+      'https://res.cloudinary.com/ll6thxdy/image/upload/f_auto,q_auto,dpr_auto,w_700/v1786151471/94619370_242448817109689_6951844033924694016_n_t0fbnz.jpg',
     alt: 'Uốn và duỗi tóc tại Triệu Tóc Đẹp',
     women: [
       {
@@ -95,7 +95,7 @@ const SERVICE_CATEGORIES: ServiceCategory[] = [
     number: '03',
     title: 'NHUỘM & MÀU',
     image:
-      'https://res.cloudinary.com/ll6thxdy/image/upload/f_auto,q_auto,dpr_auto,w_900/v1786151472/0805_4_ta4j30.jpg',
+      'https://res.cloudinary.com/ll6thxdy/image/upload/f_auto,q_auto,dpr_auto,w_700/v1786151472/0805_4_ta4j30.jpg',
     alt: 'Nhuộm và tạo màu tóc tại Triệu Tóc Đẹp',
     women: [
       {
