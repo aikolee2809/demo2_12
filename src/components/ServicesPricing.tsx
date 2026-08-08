@@ -255,10 +255,12 @@ export default function ServicesPricing() {
             Bảng Giá · Full Menu
           </span>
           <h2
-            className="mt-5 text-[44px] leading-[0.95] tracking-[-0.055em] text-[#171513] md:text-[64px]"
-            style={{ fontFamily: "'Newsreader', serif", fontWeight: 400 }}
+            className="mt-5 text-[clamp(1.75rem,3.5vw,3.5rem)] font-semibold leading-[0.98] tracking-[-0.055em] text-[#171513]"
           >
-            Dịch Vụ &amp; Bảng Giá
+            <span className="block">Dịch Vụ &amp; Bảng Giá</span>
+            <span className="mt-2 block font-display font-normal italic tracking-[-0.045em] text-[#4a433d]">
+              Cùng Triệu Salon tại Lái Thiêu
+            </span>
           </h2>
           <p
             className="mt-7 max-w-[500px] text-[14px] leading-[1.8] text-[#7a6b5d] md:text-[15px]"

@@ -1,12 +1,14 @@
 import { forwardRef, useEffect, useState, type RefObject } from 'react';
 import { Menu, X } from 'lucide-react';
+import gsap from 'gsap';
 
 const links = [
-  { label: 'VIDEO', href: '#video' },
   { label: 'LOOKBOOK', href: '#lookbook' },
+  { label: 'VIDEO', href: '#video' },
   { label: 'DỊCH VỤ', href: '#services-pricing' },
   { label: 'STYLIST', href: '#stylist' },
   { label: 'LIÊN HỆ', href: '#lien-he' },
+  { label: 'CÂU HỎI', href: '#faq' },
 ];
 
 interface NavProps {
@@ -17,6 +19,7 @@ interface NavProps {
 const Nav = forwardRef<HTMLElement, NavProps>(({ heroRef, visible }, ref) => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [insideHero, setInsideHero] = useState(true);
+
   useEffect(() => {
     const hero = heroRef.current;
     if (!hero) return;
@@ -34,6 +37,21 @@ const Nav = forwardRef<HTMLElement, NavProps>(({ heroRef, visible }, ref) => {
     if (typeof ref === 'function') ref(node);
     else if (ref) ref.current = node;
   };
+
+  useEffect(() => {
+    if (!visible) return;
+    const navEl = ref && typeof ref !== 'function' ? ref.current : null;
+    if (!navEl) return;
+
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        navEl,
+        { opacity: 0, y: -16 },
+        { opacity: 1, y: 0, duration: 0.8, ease: 'power2.out', delay: 0.2 },
+      );
+    });
+    return () => ctx.revert();
+  }, [visible, ref]);
 
   return (
     <>
@@ -58,7 +76,7 @@ const Nav = forwardRef<HTMLElement, NavProps>(({ heroRef, visible }, ref) => {
           </a>
         </div>
 
-        <div className="relative hidden items-center gap-2 md:flex">
+        <div className="relative hidden items-center gap-1 lg:flex">
           {links.map((link) => (
             <a
               key={link.label}
@@ -70,7 +88,14 @@ const Nav = forwardRef<HTMLElement, NavProps>(({ heroRef, visible }, ref) => {
           ))}
         </div>
 
-        <div className="relative hidden md:block">
+        <div className="relative hidden items-center gap-4 md:flex">
+          <a
+            href="tel:0942777009"
+            className="text-[13px] font-medium tracking-[0.05em] text-white/80 transition-colors duration-300 hover:text-white"
+            style={{ fontFamily: "'JetBrains Mono', monospace" }}
+          >
+            094 277 70 09
+          </a>
           <a
             href="https://zalo.me/0942777009"
             target="_blank"
@@ -104,6 +129,22 @@ const Nav = forwardRef<HTMLElement, NavProps>(({ heroRef, visible }, ref) => {
               {link.label}
             </a>
           ))}
+          <a
+            href="tel:0942777009"
+            className="text-[14px] tracking-[0.1em] text-white/80 transition-colors hover:text-white"
+            style={{ fontFamily: "'JetBrains Mono', monospace" }}
+          >
+            094 277 70 09
+          </a>
+          <a
+            href="https://zalo.me/0942777009"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setMobileOpen(false)}
+            className="bg-white px-8 py-4 text-[12px] font-medium uppercase tracking-[0.15em] text-[#1c1612] transition-colors duration-300 hover:bg-white/90"
+          >
+            ĐẶT LỊCH
+          </a>
         </div>
       )}
     </>

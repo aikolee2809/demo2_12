@@ -65,12 +65,12 @@ export default function BookingCTA() {
             </span>
 
             <h2
-              className="mt-8 text-[40px] leading-[1.08] tracking-[-0.035em] text-[#2a221c] md:text-[56px] lg:text-[64px]"
-              style={{ fontFamily: "'Newsreader', serif", fontWeight: 300 }}
+              className="mt-8 text-[clamp(1.75rem,3.5vw,3.5rem)] font-semibold leading-[0.98] tracking-[-0.055em] text-[#171513]"
             >
-              MÁI TÓC MỚI.
-              <br />
-              DIỆN MẠO MỚI.
+              <span className="block">MÁI TÓC MỚI. DIỆN MẠO MỚI.</span>
+              <span className="mt-2 block font-display font-normal italic tracking-[-0.045em] text-[#4a433d]">
+                Cùng Triệu Salon tại Lái Thiêu
+              </span>
             </h2>
 
             <p

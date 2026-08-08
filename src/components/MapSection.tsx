@@ -54,10 +54,12 @@ export default function MapSection() {
             Địa điểm
           </span>
           <h2
-            className="text-[32px] leading-[1.1] tracking-tight text-[#2a221c] md:text-[44px]"
-            style={{ fontFamily: "'Newsreader', serif", fontWeight: 400 }}
+            className="text-[clamp(1.75rem,3.5vw,3.5rem)] font-semibold leading-[0.98] tracking-[-0.055em] text-[#171513]"
           >
-            Hãy đến salon của chúng tôi
+            <span className="block">Hãy đến salon của chúng tôi</span>
+            <span className="mt-2 block font-display font-normal italic tracking-[-0.045em] text-[#4a433d]">
+              Cùng Triệu Salon tại Lái Thiêu
+            </span>
           </h2>
         </div>
 

@@ -1,4 +1,5 @@
-import { forwardRef, useEffect, useState } from 'react';
+import { forwardRef, useEffect, useState, useId } from 'react';
+import gsap from 'gsap';
 
 const HERO_VIDEO = 'https://res.cloudinary.com/ll6thxdy/video/upload/v1786169753/hero_edited_vrnxwh.mp4';
 
@@ -8,6 +9,7 @@ interface HeroProps {
 
 const Hero = forwardRef<HTMLElement, HeroProps>(({ visible }, ref) => {
   const [hasEntered, setHasEntered] = useState(false);
+  const headingId = useId();
 
   useEffect(() => {
     const frame = requestAnimationFrame(() => {
@@ -18,6 +20,40 @@ const Hero = forwardRef<HTMLElement, HeroProps>(({ visible }, ref) => {
   }, []);
 
   const contentVisible = visible && hasEntered;
+
+  useEffect(() => {
+    if (!contentVisible) return;
+
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({ delay: 0.15 });
+
+      tl.fromTo(
+        '.hero-title',
+        { opacity: 0, y: 20 },
+        { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out' },
+      )
+        .fromTo(
+          '.hero-subtitle',
+          { opacity: 0, y: 14 },
+          { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out' },
+          '-=0.45',
+        )
+        .fromTo(
+          '.hero-cta-row',
+          { opacity: 0, y: 14 },
+          { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out' },
+          '-=0.4',
+        )
+        .fromTo(
+          '#hero-scroll',
+          { opacity: 0, y: 10 },
+          { opacity: 1, y: 0, duration: 0.6, ease: 'power2.out' },
+          '-=0.3',
+        );
+    });
+
+    return () => ctx.revert();
+  }, [contentVisible]);
 
   return (
     <section
@@ -44,7 +80,8 @@ const Hero = forwardRef<HTMLElement, HeroProps>(({ visible }, ref) => {
 
       <div className="hero-stack pointer-events-none absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
         <h1
-          className={`hero-title select-none whitespace-nowrap text-white transition-opacity duration-700 ease-out ${contentVisible ? 'opacity-100' : 'opacity-0'}`}
+          id={headingId}
+          className="hero-title select-none whitespace-nowrap text-white opacity-0"
           style={{
             fontFamily: "'Manrope', sans-serif",
             fontWeight: 700,
@@ -59,12 +96,9 @@ const Hero = forwardRef<HTMLElement, HeroProps>(({ visible }, ref) => {
           Triệu Salon
         </h1>
 
-        <div
-          className={`hero-normal-content transition-opacity duration-700 ease-out ${contentVisible ? 'opacity-100' : 'opacity-0'}`}
-          aria-hidden={!contentVisible}
-        >
+        <div className="hero-normal-content" aria-hidden={!contentVisible}>
           <p
-            className="hero-subtitle mt-5 text-white/80"
+            className="hero-subtitle mt-5 text-white opacity-0"
             style={{
               fontFamily: "'Be Vietnam Pro', sans-serif",
               fontWeight: 500,
@@ -76,7 +110,7 @@ const Hero = forwardRef<HTMLElement, HeroProps>(({ visible }, ref) => {
             Salon Tóc Tại Lái Thiêu
           </p>
 
-          <div className="hero-cta-row pointer-events-auto mt-8 flex items-center gap-3 md:gap-4">
+          <div className="hero-cta-row pointer-events-auto mt-8 flex items-center gap-3 opacity-0 md:gap-4">
             <a
               href="https://zalo.me/0942777009"
               target="_blank"
@@ -99,7 +133,7 @@ const Hero = forwardRef<HTMLElement, HeroProps>(({ visible }, ref) => {
 
       <div
         id="hero-scroll"
-        className="absolute bottom-8 left-1/2 z-20 hidden -translate-x-1/2 flex-col items-center gap-2 md:flex"
+        className="absolute bottom-8 left-1/2 z-20 hidden -translate-x-1/2 flex-col items-center gap-2 opacity-0 md:flex"
       >
         <span
           className="text-[10px] uppercase tracking-[0.3em] text-white/40"
