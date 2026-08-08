@@ -112,7 +112,7 @@ export default function Footer() {
               className="text-[11px] uppercase tracking-[0.2em] text-white/30"
               style={{ fontFamily: "'JetBrains Mono', monospace" }}
             >
-              © 2025 Triệu Tóc Đẹp. Bảo Lưu Mọi Quyền.
+              © 2026 Triệu Tóc Đẹp. Bảo Lưu Mọi Quyền.
             </p>
           </div>
         </div>
