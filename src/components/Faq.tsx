@@ -72,6 +72,7 @@ export default function Faq() {
 
   return (
     <section
+      id="faq"
       aria-label="Câu hỏi thường gặp"
       className="bg-[#FAF8F5] py-16 md:py-24"
     >
