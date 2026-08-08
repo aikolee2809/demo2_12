@@ -64,7 +64,7 @@ const SERVICE_CATEGORIES: ServiceCategory[] = [
     number: '02',
     title: 'UỐN & DUỖI',
     image:
-      'https://res.cloudinary.com/ll6thxdy/image/upload/f_auto,q_auto,dpr_auto,w_700/v1786151471/94619370_242448817109689_6951844033924694016_n_t0fbnz.jpg',
+      'https://res.cloudinary.com/ll6thxdy/image/upload/f_auto,q_auto,dpr_auto,w_600/v1786151471/94619370_242448817109689_6951844033924694016_n_t0fbnz.jpg',
     alt: 'Uốn và duỗi tóc tại Triệu Tóc Đẹp',
     women: [
       {
