@@ -65,7 +65,7 @@ function App() {
     <div className="min-h-screen bg-[#131313] text-[#e2e2e2]">
       <Nav heroRef={heroRef} visible={heroContentVisible} />
 
-      <main>
+      <main className="relative z-10 bg-[#FAF8F5]">
         <Hero ref={heroRef} visible={heroContentVisible} />
         <ImageGallery />
         <Stats />
@@ -77,9 +77,12 @@ function App() {
           <Reviews />
           <MapSection />
           <Faq />
-          <Footer />
         </Suspense>
       </main>
+
+      <Suspense fallback={null}>
+        <Footer />
+      </Suspense>
 
       <FloatingContact ref={floatingRef} />
     </div>
