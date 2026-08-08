@@ -6,6 +6,7 @@ import ImageGallery from '@/components/ImageGallery';
 import Stats from '@/components/Stats';
 import VideoShowcase from '@/components/VideoShowcase';
 import FloatingContact from '@/components/FloatingContact';
+import Footer from '@/components/Footer';
 
 const ServicesPricing = lazy(() => import('@/components/ServicesPricing'));
 const Stylists = lazy(() => import('@/components/Stylists'));
@@ -13,7 +14,6 @@ const BookingCTA = lazy(() => import('@/components/BookingCTA'));
 const Reviews = lazy(() => import('@/components/Reviews'));
 const MapSection = lazy(() => import('@/components/MapSection'));
 const Faq = lazy(() => import('@/components/Faq'));
-const Footer = lazy(() => import('@/components/Footer'));
 
 function App() {
   const heroRef = useRef<HTMLElement>(null);
@@ -62,10 +62,10 @@ function App() {
   }, [heroContentVisible]);
 
   return (
-    <div className="min-h-screen bg-[#131313] text-[#e2e2e2]">
+    <div className="relative min-h-screen bg-[#131313] text-[#e2e2e2]">
       <Nav heroRef={heroRef} visible={heroContentVisible} />
 
-      <main className="relative z-10 bg-[#FAF8F5]">
+      <main className="relative z-[1] bg-[#FAF8F5]">
         <Hero ref={heroRef} visible={heroContentVisible} />
         <ImageGallery />
         <Stats />
@@ -80,9 +80,7 @@ function App() {
         </Suspense>
       </main>
 
-      <Suspense fallback={null}>
-        <Footer />
-      </Suspense>
+      <Footer />
 
       <FloatingContact ref={floatingRef} />
     </div>

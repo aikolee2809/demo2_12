@@ -14,7 +14,7 @@ export default function Footer() {
       style={{
         backgroundImage: `url(${FOOTER_BG})`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center 35%',
+        backgroundPosition: 'center 45%',
         backgroundRepeat: 'no-repeat',
       }}
     >
