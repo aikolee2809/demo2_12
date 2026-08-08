@@ -39,7 +39,7 @@ export default function VideoCard({ video }: VideoCardProps) {
   return (
     <div
       ref={containerRef}
-      className="group relative h-full w-full overflow-hidden rounded-none bg-[#f0ebe2] shadow-[0_2px_12px_rgba(42,34,28,0.06)] transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(42,34,28,0.12)]"
+      className="group relative h-full w-full overflow-hidden rounded-none bg-[#E8D8D5] shadow-[0_2px_12px_rgba(52,40,45,0.06)] transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(52,40,45,0.12)]"
     >
       <video
         ref={videoRef}

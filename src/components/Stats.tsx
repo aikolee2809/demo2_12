@@ -60,14 +60,14 @@ export default function Stats() {
     <section
       ref={sectionRef}
       aria-label="Thống kê về salon"
-      className="bg-[#FAF8F5] px-6 pb-16 pt-16 md:px-12 md:pb-24 md:pt-24"
+      className="bg-[#F8F5F0] px-6 pb-16 pt-16 md:px-12 md:pb-24 md:pt-24"
     >
       <div className="mx-auto max-w-[1200px]">
-        <div className="grid grid-cols-2 gap-10 border-t border-[#2a221c]/10 pt-12 md:grid-cols-3 md:items-end">
+        <div className="grid grid-cols-2 gap-10 border-t border-[#34282D]/10 pt-12 md:grid-cols-3 md:items-end">
           {STATS.map((stat, index) => (
             <div key={stat.label} className={index === 2 ? 'col-span-2 md:col-span-1' : ''}>
               <div
-                className="font-display text-5xl font-semibold leading-none tracking-tight text-[#2a221c] md:text-6xl"
+                className="font-display text-5xl font-semibold leading-none tracking-tight text-[#34282D] md:text-6xl"
                 aria-label={`${formatValue(stat.value, stat.decimals)}${stat.suffix}`}
               >
                 <span ref={(element) => { numberRefs.current[index] = element; }}>
@@ -77,7 +77,7 @@ export default function Stats() {
                   {stat.suffix}
                 </span>
               </div>
-              <div className="mt-3 text-[10px] uppercase tracking-[0.24em] text-[#2a221c]/50 md:text-[11px]">
+              <div className="mt-3 text-[10px] uppercase tracking-[0.24em] text-[#34282D]/50 md:text-[11px]">
                 {stat.label}
               </div>
             </div>

@@ -62,15 +62,15 @@ function App() {
   }, [heroContentVisible]);
 
   return (
-    <div className="relative min-h-screen bg-[#131313] text-[#e2e2e2]">
+    <div className="relative min-h-screen bg-[#F8F5F0] text-[#34282D]">
       <Nav heroRef={heroRef} visible={heroContentVisible} />
 
-      <main className="relative z-[1] bg-[#FAF8F5]">
+      <main className="relative z-[1] bg-[#F8F5F0]">
         <Hero ref={heroRef} visible={heroContentVisible} />
         <ImageGallery />
         <Stats />
         <VideoShowcase />
-        <Suspense fallback={<div className="min-h-[50vh] bg-[#FAF8F5]" />}>
+        <Suspense fallback={<div className="min-h-[50vh] bg-[#F8F5F0]" />}>
           <ServicesPricing />
           <Stylists />
           <BookingCTA />

@@ -34,19 +34,19 @@ export default function VideoShowcase() {
     <section
       aria-label="Video showcase"
       id="video"
-      className="bg-[#FAF8F5] py-20 md:py-28"
+      className="bg-[#F8F5F0] py-20 md:py-28"
     >
       <div className="container mx-auto px-6 sm:px-10 lg:px-16">
         {/* Section header */}
         <div className="mb-12 flex flex-col gap-8 md:mb-16 md:flex-row md:items-end md:justify-between">
           <div className="flex flex-col gap-3">
-            <span className="text-[10px] font-medium uppercase tracking-[0.38em] text-[#8b8178]">
+            <span className="text-[10px] font-medium uppercase tracking-[0.38em] text-[#75656A]">
               Reel
             </span>
-            <h2 className="max-w-[760px] text-[clamp(1.75rem,3.5vw,3.5rem)] font-semibold leading-[0.98] tracking-[-0.055em] text-[#171513]">
+            <h2 className="max-w-[760px] text-[clamp(1.75rem,3.5vw,3.5rem)] font-semibold leading-[0.98] tracking-[-0.055em] text-[#34282D]">
               Trải nghiệm của khách hàng
             </h2>
-            <p className="max-w-[480px] pb-1 text-[15px] leading-[1.75] tracking-[-0.01em] text-[#6d655e]">
+            <p className="max-w-[480px] pb-1 text-[15px] leading-[1.75] tracking-[-0.01em] text-[#75656A]">
               Khám phá những kiểu tóc được yêu thích tại salon , từ cắt uốn nhuộm đến tạo kiểu với giá hợp lý cho khách hàng ở khu vực chợ Lái Thiêu.
             </p>
           </div>
@@ -106,7 +106,7 @@ export default function VideoShowcase() {
             href="https://zalo.me/0942777009"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#2a221c] px-10 py-4 text-[12px] uppercase tracking-[0.15em] text-white transition-colors duration-300 hover:bg-[#3d2f24] active:scale-95"
+            className="bg-[#B98588] px-10 py-4 text-[12px] uppercase tracking-[0.15em] text-white transition-colors duration-300 hover:bg-[#A67376] active:scale-95"
             style={{ fontFamily: "'JetBrains Mono', monospace" }}
           >
             Đặt Lịch Hẹn

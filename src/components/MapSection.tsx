@@ -24,7 +24,7 @@ const CONTACT_INFO = [
     content: (
       <a
         href="tel:0942777009"
-        className="text-[#2a221c] transition-colors hover:text-[#c9a96e]"
+        className="text-[#34282D] transition-colors hover:text-[#B98588]"
         style={{ fontFamily: "'Inter', sans-serif" }}
       >
         0942 777 009
@@ -43,43 +43,43 @@ export default function MapSection() {
     <section
       id="lien-he"
       aria-label="Salon location"
-      className="bg-[#FAF8F5] py-16 md:py-24"
+      className="bg-[#F8F5F0] py-16 md:py-24"
     >
       <div className="container mx-auto px-6 sm:px-10 lg:px-16">
         <div className="mb-12 flex flex-col gap-3 md:mb-16">
           <span
-            className="text-[11px] uppercase tracking-[0.3em] text-[#7a6b5d]"
+            className="text-[11px] uppercase tracking-[0.3em] text-[#75656A]"
             style={{ fontFamily: "'JetBrains Mono', monospace" }}
           >
             Địa điểm
           </span>
           <h2
-            className="text-[clamp(1.75rem,3.5vw,3.5rem)] font-semibold leading-[0.98] tracking-[-0.055em] text-[#171513]"
+            className="text-[clamp(1.75rem,3.5vw,3.5rem)] font-semibold leading-[0.98] tracking-[-0.055em] text-[#34282D]"
           >
             <span className="block">Hãy đến salon của chúng tôi</span>
-            <span className="mt-2 block font-display font-normal italic tracking-[-0.045em] text-[#4a433d]">
+            <span className="mt-2 block font-display font-normal italic tracking-[-0.045em] text-[#75656A]">
               Gần chợ Lái Thiêu
             </span>
           </h2>
         </div>
 
         {/* Contact information row */}
-        <div className="grid grid-cols-1 gap-10 border-y border-[#2a221c]/10 py-10 sm:grid-cols-3 md:gap-8">
+        <div className="grid grid-cols-1 gap-10 border-y border-[#34282D]/10 py-10 sm:grid-cols-3 md:gap-8">
           {CONTACT_INFO.map((info) => {
             const Icon = info.icon;
             return (
               <div key={info.label} className="flex flex-col gap-3">
                 <div className="flex items-center gap-3">
-                  <Icon className="shrink-0 text-[#c9a96e]" size={18} />
+                  <Icon className="shrink-0 text-[#B98588]" size={18} />
                   <span
-                    className="text-[10px] uppercase tracking-[0.28em] text-[#7a6b5d]"
+                    className="text-[10px] uppercase tracking-[0.28em] text-[#75656A]"
                     style={{ fontFamily: "'JetBrains Mono', monospace" }}
                   >
                     {info.label}
                   </span>
                 </div>
                 <p
-                  className="text-[16px] leading-[1.7] text-[#2a221c] md:text-[17px]"
+                  className="text-[16px] leading-[1.7] text-[#34282D] md:text-[17px]"
                   style={{ fontFamily: "'Inter', sans-serif" }}
                 >
                   {info.content}
@@ -91,7 +91,7 @@ export default function MapSection() {
 
         {/* Full-width Google Maps embed */}
         <div className="mt-10 md:mt-14">
-          <div className="group/map relative overflow-hidden rounded-2xl shadow-[0_4px_24px_rgba(42,34,28,0.06)] transition-all duration-500 hover:shadow-[0_12px_40px_rgba(42,34,28,0.12)]">
+          <div className="group/map relative overflow-hidden rounded-2xl shadow-[0_4px_24px_rgba(52,40,45,0.06)] transition-all duration-500 hover:shadow-[0_12px_40px_rgba(52,40,45,0.12)]">
             <div className="aspect-[16/9] w-full md:aspect-[21/9]">
               <iframe
                 src={MAP_EMBED_SRC}
@@ -109,7 +109,7 @@ export default function MapSection() {
               href={MAPS_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="group/btn absolute right-4 top-4 z-10 flex items-center gap-2 rounded-full bg-white/95 px-5 py-2.5 text-[11px] uppercase tracking-[0.12em] text-[#2a221c] shadow-md backdrop-blur-sm transition-colors hover:bg-white md:right-6 md:top-6"
+              className="group/btn absolute right-4 top-4 z-10 flex items-center gap-2 rounded-full bg-white/95 px-5 py-2.5 text-[11px] uppercase tracking-[0.12em] text-[#34282D] shadow-md backdrop-blur-sm transition-colors hover:bg-white md:right-6 md:top-6"
               style={{ fontFamily: "'JetBrains Mono', monospace" }}
             >
               Mở Google Maps

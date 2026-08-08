@@ -30,7 +30,7 @@ function FaqItem({
   onToggle: () => void;
 }) {
   return (
-    <div className="border-b border-[#2a221c]/10">
+    <div className="border-b border-[#34282D]/10">
       <button
         type="button"
         onClick={onToggle}
@@ -38,12 +38,12 @@ function FaqItem({
         aria-expanded={isOpen}
       >
         <span
-          className="text-[19px] leading-[1.4] tracking-[-0.01em] text-[#2a221c] md:text-[22px]"
+          className="text-[19px] leading-[1.4] tracking-[-0.01em] text-[#34282D] md:text-[22px]"
           style={{ fontFamily: "'Newsreader', serif", fontWeight: 400 }}
         >
           {faq.q}
         </span>
-        <span className="shrink-0 text-[#c9a96e]">
+        <span className="shrink-0 text-[#B98588]">
           {isOpen ? <Minus size={20} /> : <Plus size={20} />}
         </span>
       </button>
@@ -56,7 +56,7 @@ function FaqItem({
       >
         <div className="overflow-hidden">
           <p
-            className="pb-7 pr-10 text-[15px] leading-[1.8] text-[#7a6b5d] md:pb-8 md:text-[16px]"
+            className="pb-7 pr-10 text-[15px] leading-[1.8] text-[#75656A] md:pb-8 md:text-[16px]"
             style={{ fontFamily: "'Inter', sans-serif" }}
           >
             {faq.a}
@@ -74,25 +74,25 @@ export default function Faq() {
     <section
       id="faq"
       aria-label="Câu hỏi thường gặp"
-      className="bg-[#FAF8F5] py-16 md:py-24"
+      className="bg-[#F8F5F0] py-16 md:py-24"
     >
       <div className="container mx-auto px-6 sm:px-10 lg:px-16">
         <div className="mb-12 flex flex-col gap-3 md:mb-16">
           <span
-            className="text-[11px] uppercase tracking-[0.3em] text-[#7a6b5d]"
+            className="text-[11px] uppercase tracking-[0.3em] text-[#75656A]"
             style={{ fontFamily: "'JetBrains Mono', monospace" }}
           >
             Trước Khi Đến Salon
           </span>
           <h2
-            className="text-[32px] leading-[1.1] tracking-tight text-[#2a221c] md:text-[44px]"
+            className="text-[32px] leading-[1.1] tracking-tight text-[#34282D] md:text-[44px]"
             style={{ fontFamily: "'Newsreader', serif", fontWeight: 400 }}
           >
             Những điều bạn thường muốn biết
           </h2>
         </div>
 
-        <div className="border-t border-[#2a221c]/10">
+        <div className="border-t border-[#34282D]/10">
           {FAQS.map((faq, i) => (
             <FaqItem
               key={i}

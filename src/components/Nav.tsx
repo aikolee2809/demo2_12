@@ -62,7 +62,7 @@ const Nav = forwardRef<HTMLElement, NavProps>(({ heroRef, visible }, ref) => {
         aria-hidden={!visible}
       >
         <div
-          className={`absolute inset-0 -z-10 border-b border-white/10 bg-[#1c1612]/80 backdrop-blur-xl transition-opacity duration-500 ${insideHero ? 'opacity-0' : 'opacity-100'}`}
+          className={`absolute inset-0 -z-10 border-b border-white/10 bg-[#34282D]/80 backdrop-blur-xl transition-opacity duration-500 ${insideHero ? 'opacity-0' : 'opacity-100'}`}
           aria-hidden="true"
         />
 
@@ -100,7 +100,7 @@ const Nav = forwardRef<HTMLElement, NavProps>(({ heroRef, visible }, ref) => {
             href="https://zalo.me/0942777009"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white px-6 py-3 text-[12px] font-medium uppercase tracking-[0.15em] text-[#1c1612] transition-colors duration-300 hover:bg-white/90 active:scale-95"
+            className="bg-white px-6 py-3 text-[12px] font-medium uppercase tracking-[0.15em] text-[#34282D] transition-colors duration-300 hover:bg-white/90 active:scale-95"
           >
             ĐẶT LỊCH
           </a>
@@ -117,7 +117,7 @@ const Nav = forwardRef<HTMLElement, NavProps>(({ heroRef, visible }, ref) => {
       </nav>
 
       {mobileOpen && (
-        <div className="fixed inset-0 z-[99] flex flex-col items-center justify-center gap-8 bg-[#1c1612] pt-24">
+        <div className="fixed inset-0 z-[99] flex flex-col items-center justify-center gap-8 bg-[#34282D] pt-24">
           {links.map((link) => (
             <a
               key={link.label}
@@ -141,7 +141,7 @@ const Nav = forwardRef<HTMLElement, NavProps>(({ heroRef, visible }, ref) => {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setMobileOpen(false)}
-            className="bg-white px-8 py-4 text-[12px] font-medium uppercase tracking-[0.15em] text-[#1c1612] transition-colors duration-300 hover:bg-white/90"
+            className="bg-white px-8 py-4 text-[12px] font-medium uppercase tracking-[0.15em] text-[#34282D] transition-colors duration-300 hover:bg-white/90"
           >
             ĐẶT LỊCH
           </a>

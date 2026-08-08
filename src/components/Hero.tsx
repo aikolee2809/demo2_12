@@ -58,7 +58,7 @@ const Hero = forwardRef<HTMLElement, HeroProps>(({ visible }, ref) => {
   return (
     <section
       ref={ref}
-      className="relative h-screen w-full overflow-hidden bg-[#1c1612]"
+      className="relative h-screen w-full overflow-hidden bg-[#34282D]"
     >
       <video
         autoPlay
@@ -115,7 +115,7 @@ const Hero = forwardRef<HTMLElement, HeroProps>(({ visible }, ref) => {
               href="https://zalo.me/0942777009"
               target="_blank"
               rel="noopener noreferrer"
-              className="whitespace-nowrap bg-white px-6 py-4 text-[11px] font-medium uppercase tracking-[0.12em] text-[#1c1612] transition-colors duration-300 hover:bg-white/90 active:scale-95 md:px-8 md:text-[12px] md:tracking-[0.15em]"
+              className="whitespace-nowrap bg-white px-6 py-4 text-[11px] font-medium uppercase tracking-[0.12em] text-[#34282D] transition-colors duration-300 hover:bg-white/90 active:scale-95 md:px-8 md:text-[12px] md:tracking-[0.15em]"
               style={{ fontFamily: "'JetBrains Mono', monospace" }}
             >
               Đặt Lịch Hẹn

@@ -20,7 +20,7 @@ export default function Footer() {
     >
       {/* Dark cinematic overlay */}
       <div
-        className="absolute inset-0 bg-gradient-to-t from-[#1c1612] via-[#1c1612]/90 to-[#1c1612]/80"
+        className="absolute inset-0 bg-gradient-to-t from-[#34282D] via-[#34282D]/90 to-[#34282D]/80"
         aria-hidden="true"
       />
 
@@ -48,7 +48,7 @@ export default function Footer() {
             {/* Contact */}
             <div className="flex flex-col gap-3">
               <span
-                className="text-[11px] uppercase tracking-[0.3em] text-[#c9a96e]"
+                className="text-[11px] uppercase tracking-[0.3em] text-[#B98588]"
                 style={{ fontFamily: "'JetBrains Mono', monospace" }}
               >
                 Liên Hệ
@@ -68,7 +68,7 @@ export default function Footer() {
             {/* Opening hours */}
             <div className="flex flex-col gap-3">
               <span
-                className="text-[11px] uppercase tracking-[0.3em] text-[#c9a96e]"
+                className="text-[11px] uppercase tracking-[0.3em] text-[#B98588]"
                 style={{ fontFamily: "'JetBrains Mono', monospace" }}
               >
                 Giờ Mở Cửa
@@ -85,7 +85,7 @@ export default function Footer() {
             {/* Social */}
             <div className="flex flex-col gap-3">
               <span
-                className="text-[11px] uppercase tracking-[0.3em] text-[#c9a96e]"
+                className="text-[11px] uppercase tracking-[0.3em] text-[#B98588]"
                 style={{ fontFamily: "'JetBrains Mono', monospace" }}
               >
                 Mạng Xã Hội

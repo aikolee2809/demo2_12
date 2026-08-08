@@ -46,18 +46,18 @@ export default function Stylists() {
     <section
       id="stylist"
       aria-label="Meet our stylists"
-      className="bg-[#FAF8F5] py-16 md:py-24"
+      className="bg-[#F8F5F0] py-16 md:py-24"
     >
       <div className="container mx-auto px-6 sm:px-10 lg:px-16">
         <div className="mb-12 flex flex-col gap-3 md:mb-16">
           <span
-            className="text-[11px] uppercase tracking-[0.3em] text-[#7a6b5d]"
+            className="text-[11px] uppercase tracking-[0.3em] text-[#75656A]"
             style={{ fontFamily: "'JetBrains Mono', monospace" }}
           >
             Đội Ngũ
           </span>
           <h2
-            className="text-[32px] leading-[1.1] tracking-tight text-[#2a221c] md:text-[44px]"
+            className="text-[32px] leading-[1.1] tracking-tight text-[#34282D] md:text-[44px]"
             style={{ fontFamily: "'Newsreader', serif", fontWeight: 400 }}
           >
             Gặp Gỡ Nhà Tạo Mẫu
@@ -70,7 +70,7 @@ export default function Stylists() {
         >
           {STYLISTS.map((stylist) => (
             <article key={stylist.name} className="group">
-              <div className="aspect-square overflow-hidden rounded-xl bg-[#f0ebe2]">
+              <div className="aspect-square overflow-hidden rounded-xl bg-[#E8D8D5]">
                 <img
                   src={stylist.img}
                   alt={stylist.name}
@@ -80,13 +80,13 @@ export default function Stylists() {
                 />
               </div>
               <p
-                className="mt-5 text-[11px] uppercase tracking-[0.2em] text-[#8b5e3c] md:text-[12px]"
+                className="mt-5 text-[11px] uppercase tracking-[0.2em] text-[#B98588] md:text-[12px]"
                 style={{ fontFamily: "'JetBrains Mono', monospace" }}
               >
                 {stylist.role}
               </p>
               <h3
-                className="mt-2 text-[32px] leading-[1.05] tracking-tight text-[#2a221c] md:text-[38px]"
+                className="mt-2 text-[32px] leading-[1.05] tracking-tight text-[#34282D] md:text-[38px]"
                 style={{ fontFamily: "'Newsreader', serif", fontWeight: 500 }}
               >
                 {stylist.name}

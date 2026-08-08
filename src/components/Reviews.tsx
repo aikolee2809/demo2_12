@@ -49,29 +49,29 @@ const COL_3 = [REVIEWS[5], REVIEWS[6], REVIEWS[7], REVIEWS[0], REVIEWS[1]];
 
 function ReviewCard({ review }: { review: Review }) {
   return (
-    <figure className="mb-6 flex w-full flex-col gap-5 rounded-xl border border-[#2a221c]/10 bg-white/60 p-8">
+    <figure className="mb-6 flex w-full flex-col gap-5 rounded-xl border border-[#34282D]/10 bg-white/60 p-8">
       <div className="flex gap-1">
         {Array.from({ length: 5 }).map((_, i) => (
-          <span key={i} className="text-[14px] text-[#c9a96e]">
+          <span key={i} className="text-[14px] text-[#B98588]">
             ★
           </span>
         ))}
       </div>
       <blockquote
-        className="text-[15px] leading-[1.8] text-[#2a221c]"
+        className="text-[15px] leading-[1.8] text-[#34282D]"
         style={{ fontFamily: "'Inter', sans-serif" }}
       >
         “{review.text}”
       </blockquote>
       <figcaption className="mt-auto">
         <p
-          className="text-[16px] text-[#2a221c]"
+          className="text-[16px] text-[#34282D]"
           style={{ fontFamily: "'Newsreader', serif", fontWeight: 400 }}
         >
           {review.name}
         </p>
         <p
-          className="mt-1 text-[11px] uppercase tracking-[0.15em] text-[#7a6b5d]"
+          className="mt-1 text-[11px] uppercase tracking-[0.15em] text-[#75656A]"
           style={{ fontFamily: "'JetBrains Mono', monospace" }}
         >
           {review.service}
@@ -114,18 +114,18 @@ export default function Reviews() {
   return (
     <section
       aria-label="Client reviews"
-      className="overflow-hidden bg-[#FAF8F5] py-16 md:py-24"
+      className="overflow-hidden bg-[#F8F5F0] py-16 md:py-24"
     >
       <div className="container mx-auto px-6 sm:px-10 lg:px-16">
         <div className="mb-12 flex flex-col gap-3 md:mb-16">
           <span
-            className="text-[11px] uppercase tracking-[0.3em] text-[#7a6b5d]"
+            className="text-[11px] uppercase tracking-[0.3em] text-[#75656A]"
             style={{ fontFamily: "'JetBrains Mono', monospace" }}
           >
             Khách Hàng Nói Gì
           </span>
           <h2
-            className="text-[32px] leading-[1.1] tracking-tight text-[#2a221c] md:text-[44px]"
+            className="text-[32px] leading-[1.1] tracking-tight text-[#34282D] md:text-[44px]"
             style={{ fontFamily: "'Newsreader', serif", fontWeight: 400 }}
           >
             Cảm Nhận Khách Hàng
@@ -139,8 +139,8 @@ export default function Reviews() {
             <ReviewColumn reviews={COL_3} duration={33} delay={6} className="hidden md:block" />
           </div>
 
-          <div className="pointer-events-none absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-[#FAF8F5] to-transparent" />
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#FAF8F5] to-transparent" />
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-[#F8F5F0] to-transparent" />
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#F8F5F0] to-transparent" />
         </div>
       </div>
     </section>

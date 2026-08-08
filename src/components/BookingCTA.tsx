@@ -48,7 +48,7 @@ export default function BookingCTA() {
     <section
       ref={sectionRef}
       aria-label="Booking call to action"
-      className="bg-[#FAF8F5] py-12 md:py-20"
+      className="bg-[#F8F5F0] py-12 md:py-20"
     >
       <div className="container mx-auto px-6 sm:px-10 lg:px-16">
         <div className="grid grid-cols-1 md:min-h-[88vh] md:grid-cols-2">
@@ -58,18 +58,18 @@ export default function BookingCTA() {
             className="flex flex-col items-center justify-center py-16 text-center md:py-24"
           >
             <span
-              className="text-[11px] uppercase tracking-[0.3em] text-[#7a6b5d]"
+              className="text-[11px] uppercase tracking-[0.3em] text-[#75656A]"
               style={{ fontFamily: "'JetBrains Mono', monospace" }}
             >
               ĐẶT LỊCH HỆN
             </span>
             <h2
-  className="mt-8 text-[clamp(1.75rem,3.5vw,3.5rem)] font-semibold leading-[0.98] tracking-[-0.055em] text-[#171513]"
+  className="mt-8 text-[clamp(1.75rem,3.5vw,3.5rem)] font-semibold leading-[0.98] tracking-[-0.055em] text-[#34282D]"
 >
   <span className="block">MÁI TÓC MỚI.</span>
   <span className="block">DIỆN MẠO MỚI.</span>
 
- <span className="mt-3 block font-display text-[clamp(0.5rem,1vw,1rem)] font-normal italic leading-[1.2] tracking-[-0.035em] text-[#4a433d]">
+ <span className="mt-3 block font-display text-[clamp(0.5rem,1vw,1rem)] font-normal italic leading-[1.2] tracking-[-0.035em] text-[#75656A]">
   <span className="block">Đã đến lúc</span>
   <span className="block">dành thời gian cho bạn.</span>
 </span>
@@ -80,7 +80,7 @@ export default function BookingCTA() {
                 href="https://zalo.me/0942777009"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block whitespace-nowrap bg-[#2a221c] px-8 py-4 text-[11px] font-medium uppercase tracking-[0.12em] text-white transition-colors duration-300 hover:bg-[#3d2f24] active:scale-95 md:px-10 md:py-5 md:text-[12px] md:tracking-[0.15em]"
+                className="inline-block whitespace-nowrap bg-[#B98588] px-8 py-4 text-[11px] font-medium uppercase tracking-[0.12em] text-white transition-colors duration-300 hover:bg-[#A67376] active:scale-95 md:px-10 md:py-5 md:text-[12px] md:tracking-[0.15em]"
                 style={{ fontFamily: "'JetBrains Mono', monospace" }}
               >
                 ĐẶT LỊCH HỆN

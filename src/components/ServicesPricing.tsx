@@ -159,26 +159,26 @@ function ServiceList({ groups }: { groups: ServiceGroup[] }) {
       {groups.map((group) => (
         <div key={group.title}>
           <h4
-            className="mb-4 text-[10px] uppercase tracking-[0.24em] text-[#827a72]"
+            className="mb-4 text-[10px] uppercase tracking-[0.24em] text-[#75656A]"
             style={{ fontFamily: "'JetBrains Mono', monospace" }}
           >
             {group.title}
           </h4>
-          <div className="divide-y divide-[#201d1a]/10">
+          <div className="divide-y divide-[#34282D]/10">
             {group.services.map((service) => (
               <div key={service.name} className="flex items-baseline gap-3 py-3 first:pt-0">
                 <span
-                  className="min-w-0 text-[15px] leading-[1.55] text-[#201d1a] md:text-[16px]"
+                  className="min-w-0 text-[15px] leading-[1.55] text-[#34282D] md:text-[16px]"
                   style={{ fontFamily: "'Inter', sans-serif" }}
                 >
                   {service.name}
                 </span>
                 <span
-                  className="h-px flex-1 translate-y-[-3px] border-b border-dotted border-[#201d1a]/20"
+                  className="h-px flex-1 translate-y-[-3px] border-b border-dotted border-[#34282D]/20"
                   aria-hidden="true"
                 />
                 <span
-                  className="shrink-0 text-right text-[12px] font-medium text-[#201d1a] md:text-[13px]"
+                  className="shrink-0 text-right text-[12px] font-medium text-[#34282D] md:text-[13px]"
                   style={{ fontFamily: "'JetBrains Mono', monospace" }}
                 >
                   {service.price}
@@ -196,9 +196,9 @@ function AudienceMenu({ label, groups }: { label: string; groups: ServiceGroup[]
   if (groups.length === 0) return null;
 
   return (
-    <div className="rounded-[2px] border border-[#201d1a]/10 bg-white/55 p-6 md:p-8">
+    <div className="rounded-[2px] border border-[#34282D]/10 bg-white/55 p-6 md:p-8">
       <h3
-        className="mb-7 text-[24px] tracking-[-0.03em] text-[#201d1a] md:text-[28px]"
+        className="mb-7 text-[24px] tracking-[-0.03em] text-[#34282D] md:text-[28px]"
         style={{ fontFamily: "'Newsreader', serif", fontWeight: 500 }}
       >
         {label}
@@ -210,17 +210,17 @@ function AudienceMenu({ label, groups }: { label: string; groups: ServiceGroup[]
 
 function CategoryMenu({ category }: { category: ServiceCategory }) {
   return (
-    <article id={category.id} className="scroll-mt-28 border-t border-[#201d1a]/15 pt-12 md:pt-16">
+    <article id={category.id} className="scroll-mt-28 border-t border-[#34282D]/15 pt-12 md:pt-16">
       <div className="mb-8 flex items-end justify-between gap-6 md:mb-10">
         <div>
           <span
-            className="text-[10px] tracking-[0.28em] text-[#827a72]"
+            className="text-[10px] tracking-[0.28em] text-[#75656A]"
             style={{ fontFamily: "'JetBrains Mono', monospace" }}
           >
             {category.number}
           </span>
           <h3
-            className="mt-3 text-[32px] leading-none tracking-[-0.045em] text-[#201d1a] md:text-[48px]"
+            className="mt-3 text-[32px] leading-none tracking-[-0.045em] text-[#34282D] md:text-[48px]"
             style={{ fontFamily: "'Newsreader', serif", fontWeight: 400 }}
           >
             {category.title}
@@ -228,7 +228,7 @@ function CategoryMenu({ category }: { category: ServiceCategory }) {
         </div>
         <a
           href="#services-pricing"
-          className="hidden text-[10px] uppercase tracking-[0.2em] text-[#827a72] transition-colors hover:text-[#201d1a] md:block"
+          className="hidden text-[10px] uppercase tracking-[0.2em] text-[#75656A] transition-colors hover:text-[#34282D] md:block"
           style={{ fontFamily: "'JetBrains Mono', monospace" }}
         >
           Về đầu trang
@@ -245,25 +245,25 @@ function CategoryMenu({ category }: { category: ServiceCategory }) {
 
 export default function ServicesPricing() {
   return (
-    <section id="services-pricing" aria-label="Services and pricing" className="bg-[#FAF8F5] py-20 md:py-28">
+    <section id="services-pricing" aria-label="Services and pricing" className="bg-[#F8F5F0] py-20 md:py-28">
       <div className="container mx-auto px-6 sm:px-10 lg:px-16">
         <div className="max-w-[620px]">
           <span
-            className="text-[10px] uppercase tracking-[0.38em] text-[#827a72]"
+            className="text-[10px] uppercase tracking-[0.38em] text-[#75656A]"
             style={{ fontFamily: "'JetBrains Mono', monospace" }}
           >
             Bảng Giá · Full Menu
           </span>
           <h2
-            className="mt-5 text-[clamp(1.75rem,3.5vw,3.5rem)] font-semibold leading-[0.98] tracking-[-0.055em] text-[#171513]"
+            className="mt-5 text-[clamp(1.75rem,3.5vw,3.5rem)] font-semibold leading-[0.98] tracking-[-0.055em] text-[#34282D]"
           >
             <span className="block">Dịch Vụ &amp; Bảng Giá</span>
-            <span className="mt-2 block font-display font-normal italic tracking-[-0.045em] text-[#4a433d]">
+            <span className="mt-2 block font-display font-normal italic tracking-[-0.045em] text-[#75656A]">
               Chi tiết
             </span>
           </h2>
           <p
-            className="mt-7 max-w-[500px] text-[14px] leading-[1.8] text-[#7a6b5d] md:text-[15px]"
+            className="mt-7 max-w-[500px] text-[14px] leading-[1.8] text-[#75656A] md:text-[15px]"
             style={{ fontFamily: "'Inter', sans-serif" }}
           >
             Bảng giá cắt, uốn, nhuộm, duỗi và phục hồi tóc tại salon tóc nữ Triệu Tóc Đẹp, Lái Thiêu, Thuận An. Mỗi dịch vụ được thực hiện tỉ mỉ với mức giá hợp lý, phù hợp cho cả khách hàng mới và khách quen.
@@ -275,7 +275,7 @@ export default function ServicesPricing() {
             <a
               key={category.id}
               href={`#${category.id}`}
-              className="group relative block aspect-[3/4] overflow-hidden bg-[#201d1a] text-white"
+              className="group relative block aspect-[3/4] overflow-hidden bg-[#34282D] text-white"
             >
               <img
                 src={category.image}
@@ -309,12 +309,12 @@ export default function ServicesPricing() {
           ))}
         </nav>
 
-        <nav aria-label="Đi đến danh mục giá" className="mt-10 flex gap-x-6 gap-y-3 overflow-x-auto border-y border-[#201d1a]/10 py-5 md:mt-14 md:justify-center">
+        <nav aria-label="Đi đến danh mục giá" className="mt-10 flex gap-x-6 gap-y-3 overflow-x-auto border-y border-[#34282D]/10 py-5 md:mt-14 md:justify-center">
           {SERVICE_CATEGORIES.map((category) => (
             <a
               key={category.id}
               href={`#${category.id}`}
-              className="shrink-0 text-[10px] uppercase tracking-[0.15em] text-[#827a72] transition-colors hover:text-[#201d1a]"
+              className="shrink-0 text-[10px] uppercase tracking-[0.15em] text-[#75656A] transition-colors hover:text-[#34282D]"
               style={{ fontFamily: "'JetBrains Mono', monospace" }}
             >
               {category.number} · {category.title}
