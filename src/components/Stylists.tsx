@@ -2,42 +2,42 @@ const STYLISTS = [
   {
   name: 'Phương Anh',
   role: 'Chuyên Gia Uốn & Phục Hồi',
-  img: 'https://res.cloudinary.com/o5ikznlv/image/upload/f_auto,q_auto:eco,dpr_auto,c_fill,ar_3:4,w_400/v1786085788/Phuong-_a8ysnw.jpg',
+  img: 'https://res.cloudinary.com/o5ikznlv/image/upload/f_auto,q_auto:eco,dpr_auto,c_fill,ar_3:4,w_300/v1786085788/Phuong-_a8ysnw.jpg',
 },
 {
   name: 'Gia Huy',
   role: 'Chuyên Gia Balayage',
-  img: 'https://res.cloudinary.com/o5ikznlv/image/upload/f_auto,q_auto:eco,dpr_auto,c_fill,ar_3:4,w_400/v1786087019/2026-08-07_14-16-57_Lumina_1_rf8v01.jpg',
+  img: 'https://res.cloudinary.com/o5ikznlv/image/upload/f_auto,q_auto:eco,dpr_auto,c_fill,ar_3:4,w_300/v1786087019/2026-08-07_14-16-57_Lumina_1_rf8v01.jpg',
 },
 {
   name: 'Minh Quân',
   role: 'Creative Director',
-  img: 'https://res.cloudinary.com/o5ikznlv/image/upload/f_auto,q_auto:eco,dpr_auto,c_fill,ar_3:4,w_400/v1786085792/2026-08-07_13-49-58_Lumina_1_krtozn.jpg',
+  img: 'https://res.cloudinary.com/o5ikznlv/image/upload/f_auto,q_auto:eco,dpr_auto,c_fill,ar_3:4,w_300/v1786085792/2026-08-07_13-49-58_Lumina_1_krtozn.jpg',
 },
 {
   name: 'Thanh Trà',
   role: 'Chuyên Gia Nối Tóc',
-  img: 'https://res.cloudinary.com/o5ikznlv/image/upload/f_auto,q_auto:eco,dpr_auto,c_fill,ar_3:4,w_400/v1786086989/2026-08-07_14-14-44_Lumina_1_xcpulk.jpg',
+  img: 'https://res.cloudinary.com/o5ikznlv/image/upload/f_auto,q_auto:eco,dpr_auto,c_fill,ar_3:4,w_300/v1786086989/2026-08-07_14-14-44_Lumina_1_xcpulk.jpg',
 },
 {
   name: 'Quốc Thịnh',
   role: 'Chuyên Gia Tóc Layer',
-  img: 'https://res.cloudinary.com/o5ikznlv/image/upload/f_auto,q_auto:eco,dpr_auto,c_fill,ar_3:4,w_400/v1786085790/THAO_t5ih68.jpg',
+  img: 'https://res.cloudinary.com/o5ikznlv/image/upload/f_auto,q_auto:eco,dpr_auto,c_fill,ar_3:4,w_300/v1786085790/THAO_t5ih68.jpg',
 },
 {
   name: 'Ngọc Thảo',
   role: 'Chuyên Gia Tóc Ngắn',
-  img: 'https://res.cloudinary.com/o5ikznlv/image/upload/f_auto,q_auto:eco,dpr_auto,c_fill,ar_3:4,w_400/v1786085799/2026-08-07_13-46-34_Lumina_1_vdixhx.jpg',
+  img: 'https://res.cloudinary.com/o5ikznlv/image/upload/f_auto,q_auto:eco,dpr_auto,c_fill,ar_3:4,w_300/v1786085799/2026-08-07_13-46-34_Lumina_1_vdixhx.jpg',
 },
 {
   name: 'Thanh Thảo',
   role: 'Chuyên Gia Nhuộm Màu',
-  img: 'https://res.cloudinary.com/o5ikznlv/image/upload/f_auto,q_auto:eco,dpr_auto,c_fill,ar_3:4,w_400/v1786085789/THAO%E3%81%AE%E3%82%B3%E3%83%92%E3%82%9A%E3%83%BC_eoo5ox.jpg',
+  img: 'https://res.cloudinary.com/o5ikznlv/image/upload/f_auto,q_auto:eco,dpr_auto,c_fill,ar_3:4,w_300/v1786085789/THAO%E3%81%AE%E3%82%B3%E3%83%92%E3%82%9A%E3%83%BC_eoo5ox.jpg',
 },
 {
   name: 'Tấn Phát',
   role: 'Chuyên Gia Tóc Bob',
-  img: 'https://res.cloudinary.com/o5ikznlv/image/upload/f_auto,q_auto:eco,dpr_auto,c_fill,ar_3:4,w_400/v1786085789/Tam-2_lggifz.jpg',
+  img: 'https://res.cloudinary.com/o5ikznlv/image/upload/f_auto,q_auto:eco,dpr_auto,c_fill,ar_3:4,w_300/v1786085789/Tam-2_lggifz.jpg',
 },
 ];
 
