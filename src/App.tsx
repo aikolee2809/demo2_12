@@ -12,6 +12,7 @@ const Stylists = lazy(() => import('@/components/Stylists'));
 const BookingCTA = lazy(() => import('@/components/BookingCTA'));
 const Reviews = lazy(() => import('@/components/Reviews'));
 const MapSection = lazy(() => import('@/components/MapSection'));
+const Faq = lazy(() => import('@/components/Faq'));
 const Footer = lazy(() => import('@/components/Footer'));
 
 function App() {
@@ -75,6 +76,7 @@ function App() {
           <BookingCTA />
           <Reviews />
           <MapSection />
+          <Faq />
           <Footer />
         </Suspense>
       </main>
