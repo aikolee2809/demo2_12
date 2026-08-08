@@ -63,24 +63,18 @@ export default function BookingCTA() {
             >
               ĐẶT LỊCH HỆN
             </span>
-
             <h2
-              className="mt-8 text-[clamp(1.75rem,3.5vw,3.5rem)] font-semibold leading-[0.98] tracking-[-0.055em] text-[#171513]"
-            >
-              <span className="block">MÁI TÓC MỚI. DIỆN MẠO MỚI.</span>
-              <span className="mt-2 block font-display font-normal italic tracking-[-0.045em] text-[#4a433d]">
-                Cùng Triệu Salon tại Lái Thiêu
-              </span>
-            </h2>
+  className="mt-8 text-[clamp(1.75rem,3.5vw,3.5rem)] font-semibold leading-[0.98] tracking-[-0.055em] text-[#171513]"
+>
+  <span className="block">MÁI TÓC MỚI.</span>
+  <span className="block">DIỆN MẠO MỚI.</span>
 
-            <p
-              className="mt-7 max-w-[380px] text-[15px] leading-[1.8] text-[#7a6b5d] md:text-[16px]"
-              style={{ fontFamily: "'Inter', sans-serif" }}
-            >
-              Đã đến lúc dành thời gian cho bạn.
-            </p>
+  <span className="mt-3 block font-display text-[clamp(1.1rem,2vw,1.8rem)] font-normal italic leading-[1.2] tracking-[-0.035em] text-[#4a433d]">
+    Đã đến lúc dành thời gian cho bạn.
+  </span>
+</h2>
 
-            <div className="mt-10">
+<div className="mt-10">
               <a
                 href="https://zalo.me/0942777009"
                 target="_blank"
