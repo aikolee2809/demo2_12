@@ -47,7 +47,7 @@ export default function VideoShowcase() {
               Trải nghiệm của khách hàng
             </h2>
             <p className="max-w-[480px] pb-1 text-[15px] leading-[1.75] tracking-[-0.01em] text-[#75656A]">
-              Khám phá những kiểu tóc được yêu thích tại salon , từ cắt uốn nhuộm đến tạo kiểu với giá hợp lý cho khách hàng ở khu vực chợ Lái Thiêu.
+              Trải nghiệm những kiểu tóc được yêu thích tại salon, từ cắt, uốn, nhuộm đến tạo kiểu với giá hợp lý cho khách hàng ở khu vực chợ Lái Thiêu.
             </p>
           </div>
 
