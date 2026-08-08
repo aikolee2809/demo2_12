@@ -31,7 +31,7 @@ const ImageGallery = () => {
           </h2>
 
           <p className="lg:col-span-5 font-body pb-1 text-[15px] leading-[1.75] tracking-[-0.01em] text-[#75656A]">
-            Trải nghiệm diện mạo mới tại Triệu Salon Lái Thiêu, nơi mỗi kiểu tóc được chăm chút theo cá tính, phong cách và đường nét riêng của bạn. Từ cắt, nhuộm đến tạo kiểu, chúng tôi giúp bạn tìm thấy mái tóc phù hợp và tự tin hơn mỗi ngày.
+          Trải nghiệm diện mạo mới tại Triệu Salon Lái Thiêu, nơi mỗi kiểu tóc được chăm chút theo cá tính, phong cách và đường nét riêng của bạn. Từ cắt, nhuộm đến tạo kiểu, chúng tôi giúp bạn tìm thấy mái tóc phù hợp và tự tin hơn mỗi ngày.
           </p>
         </div>
       </div>
