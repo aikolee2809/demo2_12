@@ -48,63 +48,65 @@ export default function BookingCTA() {
     <section
       ref={sectionRef}
       aria-label="Booking call to action"
-      className="bg-[#FAF8F5]"
+      className="bg-[#FAF8F5] py-12 md:py-20"
     >
-      <div className="grid grid-cols-1 md:grid-cols-2">
-        {/* LEFT — Typography + CTA */}
-        <div
-          ref={leftRef}
-          className="flex flex-col justify-center px-6 py-20 md:px-16 md:py-28 lg:px-20"
-        >
-          <span
-            className="text-[11px] uppercase tracking-[0.3em] text-[#7a6b5d]"
-            style={{ fontFamily: "'JetBrains Mono', monospace" }}
+      <div className="container mx-auto px-6 sm:px-10 lg:px-16">
+        <div className="grid grid-cols-1 md:min-h-[88vh] md:grid-cols-2">
+          {/* LEFT — Typography + CTA */}
+          <div
+            ref={leftRef}
+            className="flex flex-col items-center justify-center py-16 text-center md:py-24"
           >
-            ĐẶT LỊCH HẸN
-          </span>
-
-          <h2
-            className="mt-8 text-[40px] leading-[1.08] tracking-[-0.035em] text-[#2a221c] md:text-[56px] lg:text-[64px]"
-            style={{ fontFamily: "'Newsreader', serif", fontWeight: 300 }}
-          >
-            MÁI TÓC MỚI.
-            <br />
-            DIỆN MẠO MỚI.
-          </h2>
-
-          <p
-            className="mt-7 max-w-[380px] text-[15px] leading-[1.8] text-[#7a6b5d] md:text-[16px]"
-            style={{ fontFamily: "'Inter', sans-serif" }}
-          >
-            Đã đến lúc dành thời gian cho bạn.
-          </p>
-
-          <div className="mt-10">
-            <a
-              href="https://zalo.me/0942777009"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-[#2a221c] px-8 py-3.5 text-[11px] uppercase tracking-[0.15em] text-white transition-colors duration-300 hover:bg-[#3d2f24] active:scale-95"
+            <span
+              className="text-[11px] uppercase tracking-[0.3em] text-[#7a6b5d]"
               style={{ fontFamily: "'JetBrains Mono', monospace" }}
             >
-              ĐẶT LỊCH HẸN
-            </a>
-          </div>
-        </div>
+              ĐẶT LỊCH HỆN
+            </span>
 
-        {/* RIGHT — Cinematic video */}
-        <div className="relative min-h-[50vh] md:min-h-[75vh] md:h-[80vh]">
-          <video
-            ref={videoRef}
-            src={CTA_VIDEO}
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
-            aria-label="Salon cinematic video"
-            className="absolute inset-0 h-full w-full object-cover object-center"
-          />
+            <h2
+              className="mt-8 text-[40px] leading-[1.08] tracking-[-0.035em] text-[#2a221c] md:text-[56px] lg:text-[64px]"
+              style={{ fontFamily: "'Newsreader', serif", fontWeight: 300 }}
+            >
+              MÁI TÓC MỚI.
+              <br />
+              DIỆN MẠO MỚI.
+            </h2>
+
+            <p
+              className="mt-7 max-w-[380px] text-[15px] leading-[1.8] text-[#7a6b5d] md:text-[16px]"
+              style={{ fontFamily: "'Inter', sans-serif" }}
+            >
+              Đã đến lúc dành thời gian cho bạn.
+            </p>
+
+            <div className="mt-10">
+              <a
+                href="https://zalo.me/0942777009"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-[#2a221c] px-8 py-3.5 text-[11px] uppercase tracking-[0.15em] text-white transition-colors duration-300 hover:bg-[#3d2f24] active:scale-95"
+                style={{ fontFamily: "'JetBrains Mono', monospace" }}
+              >
+                ĐẶT LỊCH HỆN
+              </a>
+            </div>
+          </div>
+
+          {/* RIGHT — Cinematic video */}
+          <div className="relative min-h-[55vh] md:min-h-full">
+            <video
+              ref={videoRef}
+              src={CTA_VIDEO}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              aria-label="Salon cinematic video"
+              className="absolute inset-0 h-full w-full object-cover object-center"
+            />
+          </div>
         </div>
       </div>
     </section>
